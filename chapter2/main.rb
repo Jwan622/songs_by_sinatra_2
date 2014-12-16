@@ -2,7 +2,7 @@ require 'sinatra'
 require 'sinatra/reloader' if development?
 require 'slim'
 require 'sass'
-require_relative 'song'
+require './song'
 
 get ('/styles.css'){scss :styles}
 
